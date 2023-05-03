@@ -1,0 +1,342 @@
+
+
+html{
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  vertical-align: bottom;
+  object-fit: cover;
+  width: 100%;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+opacity: .9;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+ 
+}
+li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ft{
+  color: tomato;
+}
+/* -------------------- */
+/* ---header----- */
+/* -------------------- */
+
+
+header{
+ background-image: url(img/IMG_2907.JPG);
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+header h1{
+  margin-left: 6.4%;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 100px;
+}
+
+
+
+.header-icon{
+  width: 40%;
+  color: white;
+  margin-left: auto;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+ max-width: 200px;
+}
+.header-icon .line{
+  width: 50%;
+  max-width: 120px;
+  text-align: center;
+  height: 100px;
+  font-size: 3rem;
+  background-color: rgb(137, 246, 144);
+  border-radius: 10px;
+}
+.header-icon .insta{
+  width: 50%;
+  max-width: 120px;
+  text-align: center;
+  height: 100px;
+  font-size: 3rem;
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  border-radius: 10px;
+}
+.header-icon .insta p{
+  margin-top: 8px;
+  font-size: 1.6rem;
+}
+.header-icon .line p{
+  margin-top: 8px;
+  font-size: 1.6rem;
+}
+
+.header-icon .line i{
+  margin-top: 30px;
+}
+
+
+/* -------------------- */
+/* main */
+/* -------------------- */
+
+main{
+  background-color: rgb(236, 233, 233);
+}
+/* -------------------- */
+/* works */
+/* -------------------- */
+
+.container{
+  padding: 120px 8% 64px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.list-text{
+  margin-top: 16px;
+}
+
+.works-list ul {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-list ul li {
+ width: calc((100% - 16px) / 2);
+}
+
+.works-list ul li img{
+  height: 300px;
+}
+
+.works-list p{
+  font-size: 1.2rem;
+}
+.works-list h1{
+  padding-top: 8px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.works-list h3{
+  padding-top: 8px;
+  font-size: 2rem;
+}
+
+.wrapper-header h1{
+  margin-top: 64px;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.wrapper-header h1::before{
+  background-color:black;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.wrapper-header h1::after{
+  background-color:black;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 30px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+
+/* --------------- */
+/* ------about--------- */
+/* --------------- */
+
+.about-text p{
+  margin: 16px 0;
+ font-size: 1.8rem;
+ font-weight: bold;
+}
+.about-text img{
+  margin-top: 16px;
+}
+
+/* --------------- */
+/* ------news--------- */
+/* --------------- */
+
+
+
+.blog-header  {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+.blog-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color:#f13f79;
+}
+.blog-header p {
+  margin-top: 10px;
+  font-size: 13px;
+  color:#f13f79;
+}
+.blog-info  ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap:  30px;
+}
+.blog-info img {
+  /* width: calc((100% - 60px) /3); */
+  width: 100%;
+  height:66%;
+  object-fit: cover;
+}
+.blog-info li {
+  width: calc((100% - 60px) /3);
+}
+.blog-info li h2 {
+  font-size: 15px;
+  margin-top: 20px;
+  line-height:1.6;
+}
+.blog-info li time {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.blog button {
+  display: block;
+  width: 220px;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #f13f79;
+  margin: 30px auto 0;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  
+
+}
+.blog button h1 {
+  font-size: 14px; 
+  color: #f13f79;
+}
+.blog button::after{
+  content: "";
+  background-image: url(imges/icon_arrow-right.png);
+  color: #f13f79;
+  display: block;
+  position: absolute;
+  top:50%;
+  right:1rem ;
+  transform: translateY(-50%);
+  height: 9px;
+  width: 5px;
+  background-repeat:no-repeat ;
+  background-size:5px 9px ;
+}
+
+
+
+
+/* --------------- */
+/* ------company---------- */
+/* --------------- */
+.company-wrapper{
+  padding-top: 80px;
+}
+.company-text p{
+  padding-top: 32px;
+  font-size: 1.6rem;
+}
+
+
+/* --------------- */
+/* ------footer--------- */
+/* --------------- */
+
+footer{
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  padding: 32px 0;
+}
+
+@media(max-width:768px) {
+
+  .about-text p{
+    font-size: 1.4rem;
+  }
+  .blog-header {
+    margin-top: 70px;
+  }
+  .blog-header h1 {
+    font-size: 30px;
+  }
+  .blog-header p {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .blog-info ul {
+    display: block;
+    margin-top: 30px;
+  }
+  .blog-info img {
+    width: 100%;
+  }
+  .blog-info li {
+    width: 100%;
+  }
+  .blog-info li h2 {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  .blog-info li time {
+    margin-top: 5px;
+  }
+  .blog-info li + li {
+    margin-top: 20px;
+  }
+  .blog button {
+  margin-top: 29.5px;
+  width: 100%;
+  height: 50px;
+  }
+  
+  .company-text p{
+    font-size: 1.2rem;
+  }
+}
